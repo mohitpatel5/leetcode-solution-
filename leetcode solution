@@ -1,0 +1,13 @@
+class Solution {
+    public int climbStairs(int n) {
+        
+        
+           int srr[]=new int[n+1];
+           srr[0]=1;
+           srr[1]=1;
+           for(int i=2;i<srr.length;i++){
+               srr[i]=srr[i-1]+srr[i-2];
+           }
+           return srr[srr.length-1];
+    }
+}
